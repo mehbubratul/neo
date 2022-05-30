@@ -1,0 +1,11 @@
+,--.   ,--.         ,--.      ,--.             ,--.    
+|   `.'   |  ,---.  |  ,---.  |  |-.  ,--.,--. |  |-.  
+|  |'.'|  | | .-. : |  .-.  | | .-. ' |  ||  | | .-. ' 
+|  |   |  | \   --. |  | |  | | `-' | '  ''  ' | `-' | 
+`--'   `--'  `----' `--' `--'  `---'   `----'   `---'  
+                                                       
+${application.title} ${application.version}
+Powered by Spring Boot ${spring-boot.version}
+https://circle.visual-paradigm.com/class-diagram-example-sales-order-system/
+
+https://www.geeksforgeeks.org/how-to-install-git-in-vs-code/
