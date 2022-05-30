@@ -43,12 +43,22 @@ public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter{
     @Override
     @Bean
     protected UserDetailsService userDetailsService() {
+        
         UserDetails polashUser =  User.builder()
-            .username("Polash")
+            .username("polash")
             .password( passwordEncoder.encode("password") )
-            .roles("Customer") //Spring will treat this as ROLE_Customer
+            .roles(ApplicationUserRole.CUSTOMER.name()) //Spring will treat this as ROLE_Customer
             .build();
-        return new InMemoryUserDetailsManager(polashUser);
+
+        UserDetails adminUser = User.builder()
+            .username("admin")
+            .password(passwordEncoder.encode("password"))
+            .roles(ApplicationUserRole.ADMIN.name())
+            .build();
+
+        return new InMemoryUserDetailsManager (
+            polashUser,adminUser
+        );
     }
 
     
