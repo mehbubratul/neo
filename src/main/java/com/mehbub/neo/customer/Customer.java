@@ -60,6 +60,13 @@ public class Customer {
         this.customerActive = customerActive;
     }
 
+    @Override
+    public String toString() {
+        return "Customer [customerActive=" + customerActive + ", customerContact=" + customerContact
+                + ", customerDeliveryAddress=" + customerDeliveryAddress + ", customerId=" + customerId
+                + ", customerName=" + customerName + "]";
+    }
+
     
     
 }

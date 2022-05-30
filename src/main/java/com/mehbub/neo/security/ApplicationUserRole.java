@@ -12,7 +12,11 @@ public enum ApplicationUserRole {
         ApplicationUserPermission.CATEGORY_READ,
         ApplicationUserPermission.CATEGORY_WRITE, 
         ApplicationUserPermission.PRODUCT_READ, 
-        ApplicationUserPermission.PRODUCT_WRITE
+        ApplicationUserPermission.PRODUCT_WRITE)), 
+    ADMIN_TRAINEE(Sets.newHashSet(
+        ApplicationUserPermission.CUSTOMER_READ, 
+        ApplicationUserPermission.CATEGORY_READ,
+        ApplicationUserPermission.PRODUCT_READ
     ));
 
     private final Set<ApplicationUserPermission> permissions;

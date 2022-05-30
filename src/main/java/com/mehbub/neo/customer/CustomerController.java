@@ -25,9 +25,4 @@ public class CustomerController {
             .findFirst()
             .orElseThrow( () -> new IllegalStateException("Customer "+ customerId + " does not exists."));
     }
-
-    @GetMapping(path ="/")
-    public String hello(){
-        return "Hello";
-    }
 }
