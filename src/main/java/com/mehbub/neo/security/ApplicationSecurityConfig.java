@@ -11,22 +11,40 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @EnableWebSecurity
 public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter{
 
+    /*
+    @Bean
+    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception{
+        http
+            .authorizeRequests(
+                (authz) -> authz
+                    .antMatchers("index")
+                    .permitAll()
+                    .anyRequest()
+                    .authenticated()
+            )
+            .httpBasic();
+        http
+            .authorizeRequests()
+            .antMatchers("index", "/css/*, /js/*")
+            .permitAll()
+            .anyRequest()
+            .authenticated()
+            .and()
+            .httpBasic();
+        return http.build();
+    }*/
+
+   
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
+                .antMatchers("/","/index.html", "/css/*, /js/*")
+                .permitAll()
                 .anyRequest()
                 .authenticated()
                 .and()
                 .httpBasic();
-        /*
-        http
-            .authorizeHttpRequests((authz) -> authz
-                .anyRequest().authenticated()
-            )
-            .httpBasic(withDefaults());
-            */
     }
-    
 
 }
