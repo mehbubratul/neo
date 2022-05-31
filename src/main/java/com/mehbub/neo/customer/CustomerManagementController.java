@@ -29,16 +29,19 @@ public class CustomerManagementController {
 
     @PostMapping()
     public void registerCustomer(@RequestBody Customer customer){
+        System.out.println("Register Customer - API: /management/api/v1/customers");
         System.out.println(customer);
     }
 
     @DeleteMapping(path = "/{customerId}")
     public void deleteCustomer(@PathVariable("customerId") Integer customerId){
+        System.out.println("Delete Customer - API: /management/api/v1/customers");
         System.out.println(customerId);
     }
 
     @PutMapping(path = "/{customerId}")
     public void updateCustomer(@PathVariable("customerId") Integer customerId, @RequestBody Customer customer){
+        System.out.println("Update Customer - API: /management/api/v1/customers");
         System.out.println(String.format("%s %s", customerId, customer.getCustomerName()));
     }
 }

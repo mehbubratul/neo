@@ -7,7 +7,9 @@
 ${application.title} ${application.version}
 Powered by Spring Boot ${spring-boot.version}
 https://circle.visual-paradigm.com/class-diagram-example-sales-order-system/
-
 https://www.geeksforgeeks.org/how-to-install-git-in-vs-code/
-
 https://www.sachinsf.com/how-to-push-the-code-from-vs-code-to-github/#:~:text=Step%201%3A%20Open%20your%20Github,(optional)%20for%20the%20repository.
+
+& "e:\git\spring\neo\mvnw.cmd" clean -f "e:\git\spring\neo\pom.xml"
+& "e:\git\spring\neo\mvnw.cmd" validate -f "e:\git\spring\neo\pom.xml"
+& "e:\git\spring\neo\mvnw.cmd" compile -f "e:\git\spring\neo\pom.xml"
