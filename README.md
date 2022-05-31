@@ -1,0 +1,61 @@
+# neo
+Spring Security is a powerful and highly customisable authentication and access-control framework. It is the de-facto standard for securing Spring-based applications.
+
+Spring Security is a framework that focuses on providing both authentication and authorization to Java applications. Like all Spring projects, the real power of Spring Security is found in how easily it can be extended to meet custom requirements.
+
+=> Already Incorporated
+ - BOOTSTRAPPING
+ - SPRING SECURITY
+ - BASIC AUTH
+ - POSTMAN
+ - ANT MATCHERS
+ - APPLICATION USERS
+ - IN MEMORY USER DETAILS MANAGER
+ - PASSWORD ENCODING WITH BCRYPT
+ - ROLES AND PERMISSIONS
+ - ADMIN USER
+ - ROLES & PERMISSIONS USING ENUMS
+ - ROLE BASED AUTHENTICATION
+ - PERMISSION BASED AUTHENTICATION
+ - DISABLING CSRF
+
+=> To Do : Upcoming
+ - hasAuthority()
+ - ADDING AUTHORITIES TO USERS
+ - PERMISSION BASED AUTHENTICATION IN ACTION
+ - ORDER DOES MATTER
+ - preAuthorize()
+ - UNDERSTANDING CSRF
+ - CSRF TOKEN
+ - HOW CSRF TOKEN GENERATION WORKS
+ - LETS DISABLE CSRF AGAIN
+ - FORM BASED AUTHENTICATION
+ - ENABLE FORM BASED AUTHENTICATION
+ - SESSION ID
+ - CUSTOM LOGIN PAGE
+ - REDIRECT AFTER SUCCESS LOGIN
+ - REMEMBER ME
+ - REMEMBER ME COOKIE AND EXTRA OPTIONS
+ - LOGOUT 
+ - LOGOUT BUTTON
+ - PASSWORD, USERNAME, REMEMBER-ME  PARAMETERS
+ - DB AUTHENTICATION OVERVIEW
+ - APPLICATION USER CLASS
+ - APPLICATION USER SERVICE
+ - APPLICATION USER CLASS
+ - APPLICATION USER DAO INTERFACE
+ - FAKE APPLICATION USER SERVICE
+ - DAO AUTHENTICATION PROVIDER
+ - HELLO
+ - INTRO TO JSON WEB TOKEN (JWT)
+ - JWT LIBRARY
+ -  JwtUsernameAndPasswordAuthenticationFilter - attemptAuthentication()
+ - JwtUsernameAndPasswordAuthenticationFilter - successfulAuthentication
+ - REQUEST FILTERS
+ - FILTERS AND STATELESS SESSIONS 
+ - JWT USERNAME AND PASSWORD FILTER
+ - JWT TOKEN VERIFIER FILTER
+ - JWT TOKEN VERIFIER FILTER IN ACTION
+ - JWT CONFIG
+ - JWT CONFIG IN ACTION
+ - QUICK WORD ABOUT JWT
